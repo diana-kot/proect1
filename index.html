@@ -3,6 +3,7 @@
     <head>
         <title>Первый проект</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <div>
@@ -16,16 +17,25 @@
         <h1>Супер главный заголовок</h1>
         <h3>Норм заголовок</h3>
         <h6>Самый маленький заголовок</h6>
-        <p>Сегодня шел второй час наших занятий и мы уже даже начали изучать семантичные теги</p>
+        <p class="test border">Сегодня шел второй час наших занятий и мы уже даже начали изучать семантичные теги</p>
         <img src="https://picsum.photos/200/300" alt="Здесь была картинка">
         <input type="text">
         <div>
         <input type="radio" name="test">
         <input type="radio" name="test">
         </div>
-        <div>
+        <div class="news">
             <input type="checKbox">
             <input type="checKbox">  
+        </div>
+
+        <div class="news">
+            <h3 class="news__h">Заголовок Новости</h3>
+            <button class="news__button">Читать</button>
+        </div>
+        <div class="news news--round">
+            <h3 class="news__h">Заголовок Новости 2</h3>
+            <button class="news__button news__button--red">Читать</button>
         </div>
     </body>
 </html>
