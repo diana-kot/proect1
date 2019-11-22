@@ -1,6 +1,5 @@
 .title {
     margin-left: 30px;
-    margin-top: 50px;
     font-family: sans-serif;
     font-size: 30px;
     font-weight: bold;
@@ -11,6 +10,14 @@
     text-align: center; 
     color: white;
     font-size: 40px;
+}
+.vv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.gg {
+    text-align: center;  
 }
 .texct {
     text-align: center;   
@@ -49,18 +56,42 @@ a {
         color: white;
     }
 .container { 
-    display: inline-block;   
+      
     position: relative;
-    background-size: contain;
+    background-size: cover;
     background-image: url(img/background.jpg);
     background-repeat: no-repeat;
-    height: 2000px;
     white-space: normal;
     margin: 0 0;
-
-            
+         
     }
-.text3 {
+.t {
+text-align: center;
+}
+.ar {
+    line-height: 1;
+    display: inline-block;
+    color: white;
+    text-decoration:none;
+    cursor: pointer;
+    vertical-align: bottom;
+    line-height: normal;
+
+}
+.ar:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    transition: width .3s ease-in-out;
+    
+}
+.ar:hover:after,
+.ar:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+#Learn {
         text-align: center;     
         font-size: 30px;
         font-weight: 100;
@@ -96,6 +127,7 @@ a {
     background-color: lightyellow
 
 }
+
 .d {
     display: flex;
     justify-content: space-between
@@ -107,17 +139,24 @@ a {
     box-sizing: border-box;
     float: left; /* плавающие блоки */ 
     padding-left: 10px; /* отступ слева */
-    background-color: lightyellow
-
- }
-.ttt1 {
-    display: block;   
+     }
+.g {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ttt1 {  
     position: relative;
-    background-size: contain;
-    background-image: url(img/experiences.jpg);
+    background-size: cover;
+    background-image: url(img/background.jpg);
     background-repeat: no-repeat;
-    height: 2000px;
-    margin: 0 auto;
+    white-space: normal;
+    margin: 0 0;
+}
+.j {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .text7 {
     text-align: center;     
@@ -129,12 +168,12 @@ a {
     display: block;
 }
 .ttt2 {
-    display: block;   
+       
     position: relative;
-    background-size: contain;
+    background-size: cover;
     background-image: url(img/guided.jpg);
     background-repeat: no-repeat;
-    height: 2000px;
+    white-space: normal;
     margin: 0 auto;
 }
 .ttt3 {
@@ -145,12 +184,12 @@ a {
     float: right;
     }
 .ttt4 {
-    display: block;   
+      
     position: relative;
-    background-size: contain;
+    background-size: cover;
     background-image: url(img/landscape.jpg);
     background-repeat: no-repeat;
-    height: 2000px;
+    
     margin: 0 auto;
     }
 .ttt5 {
@@ -162,8 +201,25 @@ a {
 
 .ttt6 {
     height: 450px;
-    display:block;
-    margin:auto;
+   
+}
+.h  {
+    width: 60%; 
+
+    height: auto;  /* высота */
+    box-sizing: border-box;  
+} 
+.rj {
+    width: 90%; 
+    
+    height: auto;  /* высота */
+    box-sizing: border-box;  
+}
+.bb {
+    text-align: center;
+}
+.bb4 {
+    text-align: center;
 }
 .button1 {
     text-align: center;
@@ -175,4 +231,7 @@ a {
     float: center;
     cursor: pointer;
     width: 208;
+}
+.h5 {
+    text-align: center;
 }

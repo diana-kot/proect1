@@ -1,0 +1,35 @@
+.container {
+    position: relative;
+    background-size: cover;
+    background-image: url(img/Bigstock-41155282-New-York-City-Midtown-Skyline-1.jpg);
+    background-repeat: no-repeat;
+    white-space: normal;
+    margin: 0 0;
+    padding: 12px 18px;
+    
+}
+.text0 {
+    text-align: left;     
+    font-size: 30px;
+    font-weight: 100;
+    color: black;
+    width: 40%;
+    margin-left: 20%;
+    position: absolute;
+   display: inline-block;
+}
+.bb {
+    color: red;
+}
+.text1 {
+    color: red;
+    line-height: 1.1
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+    

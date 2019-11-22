@@ -10,12 +10,21 @@ let variable;
 // { a: {}, b: [[], 65]}, [{a: []}]
 
 function increment(arg) {
-    return arg + 1;
+ return arg + 1;
 
 }
+
+function increment10(arg) {
+  return arg + 10;
+ }
     
 variable = increment(10);
 console.log(variable);
+
+
+variable = increment10(10);
+console.log(variable);
+
 function condition(str) {
     if (str === 'test') {
         console.log('I want to eat')
@@ -43,15 +52,20 @@ let busya = {
 console.log(list[0]);
 console.log(list[4]);
     console.log(busya.legs);
+
     busya.meow();
 
-    function traverseList(){
+    function traverseList()
+    {
         console.log("------------start--------------------")
-        for (let index = 0; index < list.length; index += 1) {
+        for (let index = 0; index < list.length; index +=1) 
+        {
             console.log(list[index]);
-            console.log("------------end--------------------");
-        }}
-    traverseList();
+        }
+        console.log("------------end--------------------");
+    }
+  
+  traverseList();
 
     // логистические операторы
     // равно ===
@@ -79,3 +93,51 @@ if ('' || 0 || null || undefined || false) {
 
 console.log("Кристина хочет закончить"[9]);
 
+
+let arr  = [0, 50, 20, 40, 10];
+          
+function traverseList1()
+    {
+        let arVariable;
+        console.log("------------start--------------------")
+
+        for (let index = 0; index < arr.length; index ++) 
+        { /*1*/ arVariable = arr[index]+10;
+                 console.log(arVariable);
+          
+         /*2*/ // console.log(arr[index]+10); 
+         /*3*/ // console.log(increment10(arr[index]));
+        }
+        console.log("------------end--------------------");
+    }
+
+ traverseList1(); /// вызов функции. 
+ 
+ var myArray = 'Manchester, London, Liverpool, Birmingham, Leeds, Carlisle';
+  function dd()
+  {
+      let sd;
+      console.log("------------start--------------------")
+       sd = myArray.split(',');
+      for(let i = 0; i < myArray.length; i++)
+      {
+         console.log(sd[i]);
+      }
+      console.log("------------start--------------------")
+  }
+  dd(); 
+
+  
+  var myA = ['Manchester', 'London', 'Liverpool', 'Birmingham', 'Leeds', 'Carlisle'];
+  function ss()
+  {
+      let vv;
+      console.log("------------start--------------------")
+      vv=myA.push('Cardiff');
+      for(let h = 0; h < myA.length; h++)
+      {
+          console.log(vv);
+      }
+      console.log("------------end--------------------")
+    }
+  ss();
