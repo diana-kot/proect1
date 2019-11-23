@@ -141,3 +141,49 @@ function traverseList1()
       console.log("------------end--------------------")
     }
   ss();
+
+  var myName;
+  var myAge;
+  myName = "Chris";
+  myAge = 37
+  myName = 'Bob';
+myAge = 40;
+
+var myNameArray = ['Юля', 'Дана', 'Сережа'];
+var myNumberArray = [10,15,20];
+console.log(myNameArray[2]);
+console.log(myNumberArray[0])
+
+let myInt = 5;
+let myFloat = 6.667;
+console.log(myFloat);
+
+let myint = 7;
+console.log(myint);
+console.log(typeof myint);
+
+function can ()
+{
+    let num1 = 10;
+    let num2 = 50;
+    let sym
+    sym = 9 * num1;
+    stepen = num1 ** 3;
+    delen = num2 / num1;
+    u = (num2++);
+    console.log(sym);
+    console.log(stepen);
+    console.log(delen);
+    console.log(u);
+}
+can();
+
+function can2 ()
+{
+    let num3 = 8;
+    let g;
+    g = (++num3);
+    
+    console.log(g);
+}
+can2();

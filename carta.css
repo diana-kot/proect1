@@ -26,10 +26,34 @@
     line-height: 1.1
 }
 
-.block {
+/*.block {
     display: flex;
     align-items: center;
     justify-content: space-between;
     align-items: flex-end;
 }
-    
+*/
+.toggle-box {
+  display: none;
+}
+.toggle-box + label {
+    display: inline-block; 
+  border-bottom: 1px dotted green;
+    padding: 0;
+    color: green;
+    cursor: pointer;
+}
+.toggle-box + label + div {
+  display: none;
+}
+.toggle-box:checked + label + div {
+  display: block;
+  background: #efefef;
+  padding:5px;    
+}
+
+/* вид текста label при активном переключателе */
+.toggle-box:checked + label {
+    color: red;
+    border-bottom: 0;
+}
