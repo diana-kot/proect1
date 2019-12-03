@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="carta.css">
-    <title>carta</title>
+    <title>karta</title>
 </head>
 <body>
-<div class="container"> 
-<img src="C:\Users\user\proect1\img/Bigstock-41155282-New-York-City-Midtown-Skyline-1.jpg" alt="Здесь была картинка" class="container">   
-</div>
-    <div = class="text0">
-    <h4 = class="bb">City Lights in New York</h4> 
-        <div class="demo"> 
-        <input class="toggle-box" id="identifier-2" type="checkbox" class="hide">
-        <label for="identifier-2">The city that never sleeps.</label>
-        <div>New York City is the largest city in the USA. 
-                        It is located on the Atlantic coast in
-                         southeastern part of the State of New York. 
-                         The city was founded in 1624 by the Dutch colonists, 
-                         and was called New Amsterdam. In 1664, the British captured
-                          the city and renamed it New York in honor of the initiator of 
-                          capture – the Duke of York.</div>
-        </div>  
-    </div>
+    <div class="news-card">
+        <div class="news-card__top">
+          <span class="news-card__date">27 МАР</span>
+          <span class="news-card__label">PHOTOS</span>
+        </div>
+        <div class="news-card__bottom">
+          <p class="news-card__heading"> <a href="#" onclick="change('test')">City Lights in New York</a></p>
+          <p class="news-card__subheading">The city that never sleeps.</p>
+             <div style="display:none" id="test">
+          <p class="news-card__subheading2">
+          New York is the largest city in the USA and the biggest seaport. It is the business centre of the United States.
+          </p>
+             </div>
+          <div class="news-card__extra">
+            <span class="news-card__time">6 min ago</span>
+            <span class="news-card__comments">39 comments</span>
+          </div>
+        </div>
+      </div>
+      <script src="./carta.js">
+        </script>
 </body>
 </html>

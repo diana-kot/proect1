@@ -187,3 +187,101 @@ function can2 ()
     console.log(g);
 }
 can2();
+
+var name;
+name = "alex";
+console.log(name);
+ 
+var n1 = 1+3;
+var n2 = 8
+console.log(n2/n1);
+
+var sInM = 60;
+var mInH = 60;
+var sInH = sInM*mInH;
+console.log(sInH);
+var hInD=24;
+var sInD=sInH*hInD
+
+
+var v1=7
+console.log(v1++);
+
+var v2=7
+console.log(++v2);
+console.log(v2+=10);
+
+var d4 ="супедлиннаястрока";
+console.log(d4.length);
+
+var name="Сережа";
+console.log(name[0]);
+console.log(name[4]);
+console.log(name.slice(1,5));
+console.log(name.slice(2));
+console.log(name.toUpperCase());
+console.log(name.toLowerCase());
+
+function s2 () {
+    var s0 ='гДе Ты гдЕ';
+    var s1 = s0[0].toUpperCase();
+    var s3 = s0.slice(1).toLowerCase();
+    s0=s1+s3; 
+       
+    console.log(s0);
+}
+s2();
+
+var age=11;
+var accom=true;
+age>=12 || accom === true;
+console.log(age);
+
+
+
+
+
+function cat (){
+    let murka = {
+        "legs": 4,
+        "name": "Мурка",
+        "color": "черный"
+}
+console.log(murka.legs);}
+cat();
+
+function animals () {
+    let dog ={name: "Бобик", age: 6, color:"белый", bark: "гав-гав!"};
+    let cat= {name: "Сима", age: 10, color:"черно-белый"};
+    console.log(Object.keys(dog));
+    console.log(dog.name);
+    let cat1 = {};
+    cat1["legs"]=4;
+    cat1["color"]="черный";
+    console.log(Object.keys(cat1));
+    let dog1 = {};
+    dog1.name = "Бобик";
+    console.log(Object.keys(dog1));
+}
+animals ();
+
+function dino (){
+    var dinosaurs = [
+        { name: "Люся", age: 86, color:"белый" }
+      
+    ];
+    console.log(dinosaurs[0]);
+    console.log(dinosaurs[0]["name"]);
+    console.log(dinosaurs[0].age);
+}
+dino();
+
+var anna = { name: "Анна", age: 24};
+var dave = { name: "Миша", age: 26};
+var friends = [anna, dave];
+console.log(friends[1].name)
+
+var myCrazy = {
+    "name": "Нелепый", "some array": [7, 9, { purpose: "путаница", number: 123}, 3.3]
+};
+console.log(myCrazy["some array"][2].number);
